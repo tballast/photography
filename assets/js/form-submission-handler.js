@@ -70,18 +70,18 @@
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
           form.reset();
-          var formElements = form.querySelector(".form-elements")
+          var formElements = form.querySelector(".children.form-elements")
           if (formElements) {
             formElements.style.display = "none"; // hide form
           }
-          var thankYouMessage = form.querySelector(".thankyou_message");
+          var thankYouMessage = form.querySelector(".children.thankyou_message");
           if (thankYouMessage) {
             thankYouMessage.style.display = "block";
           }
         }
     };
-    // url encode form data for sending as post data
-    var encoded = Object.keys(data).map(function(k) {
+    // url encode form data for sending as post dat
+a    var encoded = Object.keys(data).map(function(k) {
         return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
     }).join('&');
     xhr.send(encoded);
