@@ -108,21 +108,22 @@ layout: default
             <div>
                 <section>
                     <h2>Get in touch</h2>
-                    <form method="post" action="https://script.google.com/macros/s/AKfycbzdOLbUnAzvMv2HP67K564zXREacyeukOTxxVQe/exec">
-                        <div class="field half first">
-                            <input type="text" name="name" id="name" placeholder="Name"/>
+                    <form class= "gform" method="post" action="https://script.google.com/macros/s/AKfycbzdOLbUnAzvMv2HP67K564zXREacyeukOTxxVQe/exec">
+                        <div class="form-elements">
+                            <div class="field half first">
+                                <input type="text" name="name" id="name" placeholder="Name"/>
+                            </div>
+                            <div class="field half">
+                                <input type="text" name="email" id="email" placeholder="Email"/>
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+                            </div>
+                            <ul class="actions">
+                                <li><input type="submit" value="Send" class="special"/></li>
+                                <li><input type="reset" value="Reset"/></li>
+                            </ul>
                         </div>
-                        <div class="field half">
-                            <input type="text" name="email" id="email" placeholder="Email"/>
-                        </div>
-                        <div class="field">
-                            <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
-                        </div>
-                        <ul class="actions">
-                            <li><input type="submit" value="Send" class="special"/></li>
-                            <li><input type="reset" value="Reset"/></li>
-                        </ul>
-
                         <div style="display:none" class="thankyou_message">
                             <h2>Thanks for getting in touch!</h2>
                         </div>
